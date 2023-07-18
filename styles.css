@@ -193,6 +193,25 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+/* ----------my skills----------- */
+
+.heading{
+    text-align:center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+.bar{
+    font-size: 33px;
+}
+.technical-bars .bar{
+    margin: 80px 0;
+}
+
+
+
+
 /* ----------portfolio----------- */
 
 #portfolio{
