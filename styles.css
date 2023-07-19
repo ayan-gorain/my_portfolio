@@ -271,27 +271,27 @@ nav ul li a:hover::after{
 }
 @keyframes HTML {
     100%{
-        width: 50%;
+        width: 60%;
     }   
 }
 @keyframes CSS {
     100%{
-        width: 40%;
+        width: 60%;
     }   
 }
 @keyframes ANDRO {
     100%{
-        width: 60%;
+        width: 90%;
     }   
 }
 @keyframes java {
     100%{
-        width: 30%;
+        width: 70%;
     }   
 }
 @keyframes python {
     100%{
-        width: 70%;
+        width: 80%;
     }   
 }
 /* ----------portfolio----------- */
