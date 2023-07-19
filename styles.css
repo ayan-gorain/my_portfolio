@@ -208,10 +208,92 @@ nav ul li a:hover::after{
 .technical-bars .bar{
     margin: 80px 0;
 }
-
-
-
-
+.progess-line{
+    background: #fff;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+.progess-line div{
+    height: 10px;
+    border-radius: 5px;
+    width: 0;
+    background: red;
+}
+.progess-line div span{
+    font-size: 15px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #222;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progess-line div.HTML{
+    background: #ffeb3b;
+    animation: HTML 1s linear forwards;
+}
+.progess-line div.CSS{
+    background: #13930c;
+    animation: CSS 1s linear forwards;
+}
+.progess-line div.ANDRO{
+    background: #3bcbff;
+    animation: ANDRO 1s linear forwards;
+}
+.progess-line div.java{
+    background: #ff3bce;
+    animation: java 1s linear forwards;
+}
+.progess-line div.python{
+    background: #ff7c3b;
+    animation: python 1s linear forwards;
+}
+.progess-line div.HTML span{
+    border: 2px solid #ffeb3b;
+}
+.progess-line div.CSS span{
+    border: 2px solid #13930c;
+}
+.progess-line div.ANDRO span{
+    border: 2px solid #3bcbff;
+}
+.progess-line div.java span{
+    border: 2px solid #ff3bce;
+}
+.progess-line div.python span{
+    border: 2px solid #ff7c3b;
+}
+@keyframes HTML {
+    100%{
+        width: 50%;
+    }   
+}
+@keyframes CSS {
+    100%{
+        width: 40%;
+    }   
+}
+@keyframes ANDRO {
+    100%{
+        width: 60%;
+    }   
+}
+@keyframes java {
+    100%{
+        width: 30%;
+    }   
+}
+@keyframes python {
+    100%{
+        width: 70%;
+    }   
+}
 /* ----------portfolio----------- */
 
 #portfolio{
