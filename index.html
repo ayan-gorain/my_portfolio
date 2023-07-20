@@ -15,15 +15,19 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#first">Skills</a></li>
+                    <li><a href="#second">Portfolio</a></li>
+                    <li><a href="#third">Contact</a></li>
                 </ul>
-            </nav>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>            
             <div class="header-text">
-                <h1>Hi,<br> My name is <span>Ayan</span><br>Gorain from India</h1>
+                <h1>Hi,<br> My name is <span>Ayan</span><br>Gorain </h1>
             </div>
             <div class="static-text">
-                I'm
+                I'm a
                 <ul class="dynamic-text">
                     <li><span>Flutter Developer</span></li>
                     <li><span>Web Developer</span></li>
@@ -78,8 +82,9 @@
         </div>
     </div>
     <!-- ---------------------Skills--------------- -->
-    <div class="skills">
+    <div id="skillss">
         <div class="container">
+            <div id="first"></div>
             <h1 class="sub-title">My Skills</h1>
         </div>
         <div class="rows">
@@ -202,12 +207,13 @@
     <!-- -------------portfolio-------------- -->
     <div id="portfolio">
          <div class="container">
+            <div id="second"></div>
             <h1 class="sub-title">My work</h1>
             <div class="work-list"><script src="https://kit.fontawesome.com/a015b60907.js" crossorigin="anonymous"></script>
                 <div class="work">
                     <img src="images/work-1.png" alt="">
                     <div class="layer">
-                        <h3>Enchante</h3>
+                        <h3>Enchante app</h3>
                         <p>This app is to take cloths from home and give it back after doing the process</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
@@ -216,16 +222,16 @@
                 <div class="work">
                     <img src="images/work-2.png" alt="">
                     <div class="layer">
-                        <h3>Cook fast</h3>
+                        <h3>Cook fast app</h3>
                         <p>This app is to tsee the frige and check what vegetables are geeting wastesd and from that ingrediants we can make something</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png" alt="">
+                    <img src="images/work-3.png" alt="">
                     <div class="layer">
-                        <h3>Cook fast</h3>
-                        <p>This app is to tsee the frige and check what vegetables are geeting wastesd and from that ingrediants we can make something</p>
+                        <h3>Portfolio Website</h3>
+                        <p>This website is portfolio you can know me better in in this website</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -234,11 +240,16 @@
          </div>
     </div>
 <!-- --------contact---------------- -->
-<div class="contact">
+<div id="contact">
+    
     <div class="container">
-        <div class="row">
+        <div id="third"></div>
+            <h1 class="sub-title">Contact</h1>
+        <div class="row1">
+            
             <div class="contact-left">
-                <h1 class="sub-title">Contact</h1>
+                
+                
                 <p><i class="fa-solid fa-paper-plane"></i>goraiayan108@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i>9330230461</p>
                 <div class="social-icons">
@@ -247,7 +258,7 @@
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="images/my cv.pdf" download class="btn btn2">Download CV</a>
+                <a href="https://drive.google.com/file/d/1o2B8AxTJVXurMTMEx_qGIOpupgibZuhe/view?usp=sharing"  class="btn btn2">View CV</a>
                
 
             </div>
@@ -295,17 +306,6 @@
             document.getElementById(tabname).classList.add("active-tab");
             
         }
-        let number =document.getElementById("number");
-        let counter = 0;
-        setInterval(()=>{
-            if(counter == 65){
-                clearInterval();
-
-            }else{
-                counter+=1;
-                number.innerHTML=counter+"%";
-            }
-        },20);
     </script>
 </body>
 </html> 
