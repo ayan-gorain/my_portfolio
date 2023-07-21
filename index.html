@@ -217,7 +217,7 @@
                     <div class="layer">
                         <h3>Enchante app</h3>
                         <p>This app is to take cloths from home and give it back after doing the process</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/ayan-gorain/Enchantee"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                
@@ -226,7 +226,7 @@
                     <div class="layer">
                         <h3>Cook fast app</h3>
                         <p>This app is to tsee the frige and check what vegetables are geeting wastesd and from that ingrediants we can make something</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/ayan-gorain/Cook-Fast"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -234,7 +234,7 @@
                     <div class="layer">
                         <h3>Portfolio Website</h3>
                         <p>This website is portfolio you can know me better in in this website</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/ayan-gorain/my_portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -255,7 +255,7 @@
                 <p><i class="fa-solid fa-paper-plane"></i>goraiayan108@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i>9330230461</p>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/profile.php?id=100069820012255&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://twitter.com/ayangorai1"><i class="fa-brands fa-square-twitter"></i></a>
                     <a href="https://www.instagram.com/_ayan56_/"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/ayan-gorain/"><i class="fa-brands fa-linkedin"></i></a>
@@ -266,12 +266,13 @@
 
             </div>
             <div class="contact-right">
-                <form >
+                <form  name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message"  rows="6" placeholder="Yours Message"></textarea>
                     <button type="submit"  class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
 
             </div>
         </div>
@@ -308,6 +309,24 @@
     // Add an event listener to the close icon inside the sidemenu
     document.getElementById("closeIcon").addEventListener("click", closemenu);
 </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbypvAh0wPHr-ELMQUqDnuNUTdt500lZZ5gdd-r5cZagkHMLKM2cMo2mvbK4ZXVaAYUB/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
 
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html> 
