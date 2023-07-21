@@ -793,15 +793,17 @@ nav .fas{
     }
     p{
         margin-top: 20px;
+        width: 85%;
+        margin-left: 5%;
     }
     .tab-titles {
         display: flex;
-        margin: 41px 73px 29px;
+        margin: 28px 52px 29px;
     }
     .header-text h1 {
         font-size: 50px;
         padding: 0 30px;
-        margin-top: 40px;
+        margin-top: 40%;
     }
     #skillss {
         padding: 93px 0 0 0;
@@ -863,6 +865,44 @@ nav .fas{
         border-left: 2px solid #ff004f;
         animation: typing 3s steps(10) infinite;
     }
-    
+    .work img {
+        width: 299px;
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.5s;
+        height: 315px;
+        margin-left: 5%;
+    }
+    .layer {
+        width: 97%;
+    }
+        
+    #third {
+            padding: 0 0 0 0;
+    }
+    .row1{
+        display: grid;
+            padding: 0;
+    }
+    .contact-left {
+        padding: 0 0 0 0;
+    }
+    .btn.btn2 {
+        display: inline-block;
+        background: #ff004f;
+        margin-left: 21%;
+    }
+    form input, form textarea {
+        width: 90%;
+        border: 0;
+        outline: none;
+        background: #262626;
+        padding: 15px;
+        margin: 15px 0px;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 6px;
+        margin-left: 3%;
+    }
 
 }
