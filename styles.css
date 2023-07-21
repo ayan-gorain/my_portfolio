@@ -13,6 +13,7 @@ html {
 body {
     background: #080808;
     color: #fff;
+    margin: 0% 4% 0%
 }
 
 #header {
@@ -136,7 +137,7 @@ nav ul li a:hover::after {
     content: "";
     position: absolute;
     left: 0;
-    height: 100%;
+    height: 80px;
     width: 100%;
     background-color: black;
     border-left: 2px solid #ff004f;
@@ -716,168 +717,44 @@ form .btn2 {
 
 /* -----------------css for small screen--------------- */
 
-@media screen and (max-width: 400px){
-    #header {
-        /* background-image: url(images/1.png); */
-    }
-
-    nav ul li {
-        display: none;
-    }
-
-    .toggle_btn {
-        display: block;
-    }
-
-  
-    
-
-
-    .header-text h1 {
-        margin-top: 10%;
-        font-size: 50px;
-    }
-
-    .container .static-text {
-        color: #fff;
-        font-size: 20px;
-        font-weight: 400;
-        padding: 40px 0 0 0;
-
-    }
-
-    .dynamic-text li {
-        font-size: 25px;
-    }
-
-    .about-col-1{
-        display: flex;
-        justify-content: center;
-    }
-
-    .rows{
-        display: grid;
-    }
-    /* *----------------------------------------------------------------------------- */
-    html,body{
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
-    .rows{
-        display: grid;
-    }
-    .card1 {
-        padding: 0 0px;
-        margin-right: 40px;
-    }
-    .progess-line {
-        background: #fff;
-        width: 306px;
-        height: 10px;
-        border-radius: 5px;
-    }
-    .containerr {
-        position: relative;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 200px;
-        margin-right: 400px;
-    }
-    .sub-title {
-        font-size: 60px;
-        font-weight: 600;
-        color: #fff;
-        margin-left: 76px;
-    }
-    .about-col-1 img {
-        width: 288px;
-        border-radius: 15px;
-        margin-bottom: 50px;
-    }
-    .header-text h1 {
-        font-size: 50px;
-        padding: 0 30px;
-    }
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-bottom: 200px;
-    }
-    .container .static-text {
-        color: #fff;
-        font-size: 20px;
-        font-weight: 400;
-        padding: 79px 0 0 0;
-    }
-    .container {
-        /* margin-right: 0px; */
-        padding: 0 0 0 0;
-    }
-    .row {
-        display: grid;
-        /* justify-content: space-between; */
-        flex-wrap: wrap;
-        /* padding: 84px 0 0 0; */
-    }
-    
-
+nav .fas{
+    display: none;
 }
 @media screen and (max-width: 700px){
-    #header {
-        /* background-image: url(images/1.png); */
-    }
-
-    nav ul li {
-        display: none;
-    }
-
-    .toggle_btn {
-        display: block;
-    }
-
-  
-    
-
-
-    .header-text h1 {
-        margin-top: 10%;
-        font-size: 50px;
-    }
-
-    .container .static-text {
-        color: #fff;
-        font-size: 20px;
-        font-weight: 400;
-        padding: 40px 0 0 0;
-
-    }
-
-    .dynamic-text li {
-        font-size: 25px;
-    }
-
-    .about-col-1{
-        display: flex;
-        justify-content: center;
-    }
-
-    .rows{
-        display: grid;
-    }
-    /* *----------------------------------------------------------------------------- */
-    html,body{
+   html,body{
         width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
         overflow-x: hidden;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        margin-right: 40px;
+    } 
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top:0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        margin: 69px;
+        display: block;
+       
+
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
     }
     .rows{
         display: grid;
@@ -905,39 +782,86 @@ form .btn2 {
         font-size: 60px;
         font-weight: 600;
         color: #fff;
-        margin-left: 76px;
+        margin-left: 38px;
     }
     .about-col-1 img {
         width: 288px;
         border-radius: 15px;
         margin-bottom: 50px;
+        margin-left: 40px;
+
+    }
+    p{
+        margin-top: 20px;
+    }
+    .tab-titles {
+        display: flex;
+        margin: 41px 73px 29px;
     }
     .header-text h1 {
         font-size: 50px;
         padding: 0 30px;
+        margin-top: 40px;
+    }
+    #skillss {
+        padding: 93px 0 0 0;
+        
+    }
+    .heading{
+        margin-top: 49px;
+    }
+    .containerr {
+        position: relative;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-right: 450px;
     }
     nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-bottom: 200px;
+        margin-bottom: 96px;
     }
     .container .static-text {
         color: #fff;
         font-size: 20px;
         font-weight: 400;
-        padding: 79px 0 0 0;
+        padding: 44px 0 0 0;
+        margin-left: 40px;
     }
     .container {
-        /* margin-right: 0px; */
+       
         padding: 0 0 0 0;
+        margin-left: 4%;
     }
     .row {
         display: grid;
-        /* justify-content: space-between; */
+        
         flex-wrap: wrap;
-        /* padding: 84px 0 0 0; */
+       
+    }
+    .dynamic-text li {
+        list-style: none;
+        color: #ff004f;
+        font-size: 20px;
+        font-weight: 500;
+        position: relative;
+        top: 0;
+        animation: slide 12s steps(4) infinite;
+    }
+    dynamic-text li::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 80px;
+        width: 100%;
+        background-color: black;
+        border-left: 2px solid #ff004f;
+        animation: typing 3s steps(10) infinite;
     }
     
 

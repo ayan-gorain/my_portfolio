@@ -12,18 +12,20 @@
         <div class="container">
             <nav>
                 <img src="images/3.png" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#first">Skills</a></li>
                     <li><a href="#second">Portfolio</a></li>
                     <li><a href="#third">Contact</a></li>
+                    <!-- Add an ID for the close icon -->
+                    <i id="closeIcon" class="fas fa-times"></i>
                 </ul>
-                <div class="toggle_btn">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </nav>            
-            <div class="header-text">
+                <!-- Call the openmenu() function when the bars icon is clicked -->
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+                        
+            <div class="header-text" onclick="openmenu()">
                 <h1>Hi,<br> My name is <span>Ayan</span><br>Gorain </h1>
             </div>
             <div class="static-text">
@@ -307,5 +309,20 @@
             
         }
     </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+    // Add an event listener to the close icon inside the sidemenu
+    document.getElementById("closeIcon").addEventListener("click", closemenu);
+</script>
+
 </body>
 </html> 
