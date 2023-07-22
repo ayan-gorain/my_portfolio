@@ -311,27 +311,27 @@ nav ul li a:hover::after {
 
 .progess-line div.HTML {
     background: #ffeb3b;
-    animation: HTML 1s linear forwards;
+    animation: HTML 6s infinite;
 }
 
 .progess-line div.CSS {
     background: #13930c;
-    animation: CSS 1s linear forwards;
+    animation: CSS 6s infinite;
 }
 
 .progess-line div.ANDRO {
     background: #3bcbff;
-    animation: ANDRO 1s linear forwards;
+    animation: ANDRO 6s infinite;
 }
 
 .progess-line div.java {
     background: #ff3bce;
-    animation: java 1s linear forwards;
+    animation: java 6s infinite;
 }
 
 .progess-line div.python {
     background: #ff7c3b;
-    animation: python 1s linear forwards;
+    animation: python 6s infinite;
 }
 
 .progess-line div.HTML span {
@@ -447,8 +447,8 @@ nav ul li a:hover::after {
     stroke-dasharray: 440;
     stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
     opacity: 0;
-    animation: fadeIN 1s linear forwards;
-    animation-delay: 1.5s;
+    animation: fadeIN 6s infinite;
+   
 }
 
 .dot {
@@ -456,7 +456,7 @@ nav ul li a:hover::after {
     inset: 5px;
     z-index: 10;
     transform: rotate(calc(3.6deg*var(--num)));
-    animation: animateDot 2s linear forwards;
+    animation: animateDot 6s infinite;
 }
 
 @keyframes animateDot {
@@ -493,7 +493,7 @@ nav ul li a:hover::after {
     align-items: center;
     flex-direction: column;
     opacity: 0;
-    animation: fadeIN 1s linear forwards;
+    animation: fadeIN 6s infinite;
     animation-delay: 2.5s;
 }
 
