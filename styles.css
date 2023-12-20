@@ -13,8 +13,10 @@ html {
 body {
     background: #080808;
     color: #fff;
-    margin: 0% 4% 0%
+    margin: 0% 4% 0%;
+    overflow-x: hidden;
 }
+
 
 #header {
     width: 100%;
@@ -98,63 +100,17 @@ nav ul li a:hover::after {
 
 .container .static-text {
     color: #fff;
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 400;
     display: flex;
+    padding-top: 76px;
+    padding-left: 12px;
 }
 
-.dynamic-text {
-    margin-left: 15px;
-    line-height: 90px;
-    height: 90px;
-
-    overflow: hidden;
-}
-
-.dynamic-text li {
-    list-style: none;
+.container .auto-type{
     color: #ff004f;
-    font-size: 40px;
-    font-weight: 500;
-    position: relative;
-    top: 0;
-    animation: slide 12s steps(4) infinite;
-
-}
-
-@keyframes slide {
-    100% {
-        top: -360px;
-    }
-
-}
-
-.dynamic-text li {
-    position: relative;
-}
-
-.dynamic-text li::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 80px;
-    width: 100%;
-    background-color: black;
-    border-left: 2px solid #ff004f;
-    animation: typing 3s steps(10) infinite;
-}
-
-@keyframes typing {
-
-    40%,
-    60% {
-        left: calc(100%);
-
-    }
-
-    100% {
-        left: 0;
-    }
+    
+    
 
 }
 
@@ -182,11 +138,12 @@ nav ul li a:hover::after {
 
 .about-col-1 {
     flex-basis: 35%;
+    padding-top: 97px;
 
 }
 
 .about-col-1 img {
-    width: 100%;
+    width: 90%;
     border-radius: 15px;
 
 }
@@ -199,6 +156,11 @@ nav ul li a:hover::after {
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+}.sub-titleab {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 90px;
 }
 
 .tab-titles {
@@ -251,17 +213,12 @@ nav ul li a:hover::after {
 
 /* ----------my skills----------- */
 #skillss {
-    padding: 490px 0 0 0;
+    padding:411px 0 0 0;
+    overflow: hidden; 
 }
 
-.rows {
-    display: flex;
-    justify-content: space-between;
-}
 
-.card1 {
-    padding: 0 205px;
-}
+
 
 .heading {
 
@@ -278,6 +235,8 @@ nav ul li a:hover::after {
 
 .technical-bars .bar {
     margin: 80px 0;
+    padding-left: 400px;
+    
 }
 
 .progess-line {
@@ -311,27 +270,27 @@ nav ul li a:hover::after {
 
 .progess-line div.HTML {
     background: #ffeb3b;
-    animation: HTML 6s infinite;
+    animation: HTML 6s forwards;
 }
 
 .progess-line div.CSS {
     background: #13930c;
-    animation: CSS 6s infinite;
+    animation: CSS 6s forwards;
 }
 
 .progess-line div.ANDRO {
     background: #3bcbff;
-    animation: ANDRO 6s infinite;
+    animation: ANDRO 6s forwards;
 }
 
 .progess-line div.java {
     background: #ff3bce;
-    animation: java 6s infinite;
+    animation: java 6s forwards;
 }
 
 .progess-line div.python {
     background: #ff7c3b;
-    animation: python 6s infinite;
+    animation: python 6s forwards;
 }
 
 .progess-line div.HTML span {
@@ -447,7 +406,7 @@ nav ul li a:hover::after {
     stroke-dasharray: 440;
     stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
     opacity: 0;
-    animation: fadeIN 6s infinite;
+    animation: fadeIN 20s linear forwards;
    
 }
 
@@ -456,7 +415,7 @@ nav ul li a:hover::after {
     inset: 5px;
     z-index: 10;
     transform: rotate(calc(3.6deg*var(--num)));
-    animation: animateDot 6s infinite;
+    animation: animateDot 6s linear forwards;
 }
 
 @keyframes animateDot {
@@ -493,7 +452,7 @@ nav ul li a:hover::after {
     align-items: center;
     flex-direction: column;
     opacity: 0;
-    animation: fadeIN 6s infinite;
+    animation: fadeIN 6s linear forwards;
     animation-delay: 2.5s;
 }
 
@@ -769,6 +728,10 @@ nav .fas{
         height: 10px;
         border-radius: 5px;
     }
+    .technical-bars .bar {
+        margin: 80px 0;
+        padding-left: 60px;
+    }
     .containerr {
         position: relative;
         display: grid;
@@ -776,13 +739,13 @@ nav .fas{
         align-items: center;
         flex-wrap: wrap;
         gap: 200px;
-        margin-right: 400px;
+        margin-left: 64px;
     }
     .sub-title {
         font-size: 60px;
         font-weight: 600;
         color: #fff;
-        margin-left: 38px;
+        margin-left: 8px;
     }
     .about-col-1 img {
         width: 78%;
@@ -864,17 +827,42 @@ nav .fas{
         border-left: 2px solid #ff004f;
         animation: typing 3s steps(10) infinite;
     }
+  
+    
     .work img {
-        width: 299px;
+        width: 306px;
+        border-radius: 60px;
+        height: 300px; 
+        
+        
+    }
+    .work {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 10px;
-        display: block;
-        transition: transform 0.5s;
-        height: 315px;
-        margin-left: 5%;
+        /* Additional styles for the container if needed */
     }
     .layer {
-        width: 97%;
+        width: 339px; /* Same width as the image in .work */
+        height: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+        border-radius: 10px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 40px;
+        text-align: center;
+        font-size: 14px;
+        transition: height 0.5s;
     }
+
         
     #third {
             padding: 0 0 0 0;

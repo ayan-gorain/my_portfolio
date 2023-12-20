@@ -10,7 +10,7 @@
 <body>
     <div id="header">
         <div class="container">
-            <nav>
+            <nav class="navbar">
                 <img src="images/3.png" class="logo">
                 <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
@@ -28,17 +28,29 @@
             <div class="header-text" onclick="openmenu()">
                 <h1>Hi,<br> My name is <span>Ayan</span><br>Gorain </h1>
             </div>
-            <div class="static-text">
-                I'm a
-                <ul class="dynamic-text">
-                    <li><span>Flutter Developer</span></li>
-                    <li><span>Web Developer</span></li>
-                    <li><span>Photographer</span></li>
-                    <li><span>Dsa Expert</span></li>
-    
-    
-                </ul>
-            </div>
+            
+           <div class="static-text">
+             <h1>I'm a <span class="auto-type"></span></h1>
+           
+           
+           
+             <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+             <script>
+              var typed = new Typed(".auto-type", {
+                strings: ["Flutter Devloper", "Photographer", "Dsa Expert", "Web Devoloper"],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true,
+                
+              });
+             </script>
+          </div>
+              
+              
+              
+              
+              
+              
         </div>
        
     </div>
@@ -51,10 +63,12 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I am  a talented Flutter developer hailing from West Bengal. 
-                        Currently pursuing his studies at VIT Bhopal, he excels in crafting
-                         innovative and user-friendly applications. With a passion for coding and an eye for detail, 
-                         Ayan showcases his expertise in developing seamless and captivating Flutter-based solutions.</p>
+                    <p>
+                        Hey there, I'm Ayan Gorain, a pre-final year B.Tech student at VIT Bhopal, diving deep into Computer Science.
+                         I'm a West Bengal native and a whiz at crafting user-friendly applications using Flutter. 
+                         My knack for detail helps me create seamless solutions. Coding is my jam, and I’m currently exploring Data Structures and Algorithms, 
+                         loving every bit of it. Beyond coding, I find joy in helping friends, fostering a collaborative vibe in the tech scene. West Bengal’s 
+                         vibrant culture fuels my creativity. My journey is about mastering tech, exploring intricacies, and creating a supportive learning space</p>
                          <div class="tab-titles">
                             <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
                             <p class="tab-links " onclick="opentab('education')">Education</p>
@@ -87,125 +101,122 @@
     <div id="skillss">
         <div class="container">
             <div id="first"></div>
-            <h1 class="sub-title">My Skills</h1>
+            <h1 class="sub-titleab">My Skills</h1>
         </div>
         <div class="rows">
             <div class="card1">
                 <div class="container">
-            
-                <h1 class="heading">Technical</h1>
-                <div class="technical-bars">
-                    <div class="bar"><i class="fa-brands fa-html5"></i>
-                    <div class="indfo">
-                        <span>HTML</span>
-                    <div class="progess-line ">
-                        <div class="HTML"><span>60%</span></div></div>
+                    <h1 class="heading1">Technical</h1>
+                    <div class="technical-bars">
+                        <div class="bar"><i class="fa-brands fa-html5"></i>
+                            <div class="indfo">
+                                <span>HTML</span>
+                                <div class="progess-line">
+                                    <div class="HTML"><span>60%</span></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="technical-bars">
+                        <div class="bar"><i class="fa-brands fa-css3-alt"></i>
+                            <div class="indfo"><span>CSS</span>
+                                <div class="progess-line">
+                                    <div class="CSS"><span>60%</span></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="technical-bars">
-                    <div class="bar"><i class="fa-brands fa-css3-alt"></i>
-                    <div class="indfo"><span>CSS</span>
-                    <div class="progess-line">
-                        <div class="CSS"><span>60%</span></div>
+                    <div class="technical-bars">
+                        <div class="bar"><i class="fa-brands fa-android"></i>
+                            <div class="indfo"><span>Android Devolopment</span>
+                                <div class="progess-line ">
+                                    <div class="ANDRO"><span>90%</span></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="technical-bars">
+                        <div class="bar"><i class="fa-brands fa-square-js"></i>
+                            <div class="indfo"><span>Java</span>
+                                <div class="progess-line ">
+                                    <div class="java"><span>70%</span></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                </div>
-                <div class="technical-bars">
-                    <div class="bar"><i class="fa-brands fa-android"></i>
-                    <div class="indfo"><span>Android Devolopment</span>
-                    <div class="progess-line ">
-                        <div class="ANDRO"><span>90%</span></div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-               
-                <div class="technical-bars">
-                    <div class="bar"><i class="fa-brands fa-square-js"></i>
-                        <div class="indfo"><span>Java</span>
-                    
-                   
-                    <div class="progess-line ">
-                        <div class="java"><span>70%</span></div>
-                    </div>
-                </div>
-                </div>
-                </div>
-                <div class="technical-bars">
-                    <div class="bar"><i class="fa-brands fa-python"></i>
-                        <div class="indfo"><span>Python</span>
-                    
-                   
-                    <div class="progess-line ">
-                        <div class="python"><span>80%</span></div>
+                    <div class="technical-bars">
+                        <div class="bar"><i class="fa-brands fa-python"></i>
+                            <div class="indfo"><span>Python</span>
+                                <div class="progess-line ">
+                                    <div class="python"><span>80%</span></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-                </div>
-    
-            </div></div>
-            <div class="card2">
-                <h1 class="heading1">Professional </h1>
-              <div class="containerr">
-                <div class="card">
-                    <div class="percent" style="--clrr:#04fc43;--num:70;">
-                        <div class="dot"></div>
-                        <svg>
-                            <circle class="bg-circle" cx="70" cy="70" r="70"></circle>
-                            <circle class="animated-circle" cx="70" cy="70" r="70"></circle>
-                        </svg>
-                    </div>
-                    <div class="number">
-                        <h2>70<span>%</span></h2>
-                        <p>Creativeness</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="percent" style="--clrr:#06ccff;--num:77;">
-                        <div class="dot"></div>
-                        <svg>
-                            <circle class="bg-circle" cx="70" cy="70" r="70"></circle>
-                            <circle class="animated-circle" cx="70" cy="70" r="70"></circle>
-                        </svg>
-                    </div>
-                    <div class="number">
-                        <h2>77<span>%</span></h2>
-                        <p>Communication</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="percent" style="--clrr:#fee800;--num:80;">
-                        <div class="dot"></div>
-                        <svg>
-                            <circle class="bg-circle" cx="70" cy="70" r="70"></circle>
-                            <circle class="animated-circle" cx="70" cy="70" r="70"></circle>
-                        </svg>
-                    </div>
-                    <div class="number">
-                        <h2>80<span>%</span></h2>
-                        <p>Promblem <br> Solving</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="percent" style="--clrr:#ff00be;--num:95;">
-                        <div class="dot"></div>
-                        <svg>
-                            <circle class="bg-circle" cx="70" cy="70" r="70"></circle>
-                            <circle class="animated-circle" cx="70" cy="70" r="70"></circle>
-                        </svg>
-                    </div>
-                    <div class="number">
-                        <h2>95<span>%</span></h2>
-                        <p>Team Work</p>
-                    </div>
-                </div>
-              </div>
             </div>
-
+            <div class="card2">
+                <div class="container">
+                    <h1 class="heading1">Professional</h1>
+                    <div class="containerr">
+                        <div class="card">
+                            <div class="percent" style="--clrr:#04fc43;--num:70;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle class="bg-circle" cx="70" cy="70" r="70"></circle>
+                                    <circle class="animated-circle" cx="70" cy="70" r="70"></circle>
+                                </svg>
+                            </div>
+                            <div class="number">
+                                <h2>70<span>%</span></h2>
+                                <p>Creativeness</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="percent" style="--clrr:#06ccff;--num:77;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle class="bg-circle" cx="70" cy="70" r="70"></circle>
+                                    <circle class="animated-circle" cx="70" cy="70" r="70"></circle>
+                                </svg>
+                            </div>
+                            <div class="number">
+                                <h2>77<span>%</span></h2>
+                                <p>Communication</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="percent" style="--clrr:#fee800;--num:80;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle class="bg-circle" cx="70" cy="70" r="70"></circle>
+                                    <circle class="animated-circle" cx="70" cy="70" r="70"></circle>
+                                </svg>
+                            </div>
+                            <div class="number">
+                                <h2>80<span>%</span></h2>
+                                <p>Problem<br>Solving</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="percent" style="--clrr:#ff00be;--num:95;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle class="bg-circle" cx="70" cy="70" r="70"></circle>
+                                    <circle class="animated-circle" cx="70" cy="70" r="70"></circle>
+                                </svg>
+                            </div>
+                            <div class="number">
+                                <h2>95<span>%</span></h2>
+                                <p>Team Work</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    
     <!-- -------------portfolio-------------- -->
     <div id="portfolio">
          <div class="container">
@@ -224,18 +235,12 @@
                 <div class="work">
                     <img src="images/work-2.png" alt="">
                     <div class="layer">
-                        <h3>Cook fast app</h3>
+                        <h3>Cookify app</h3>
                         <p>This app is to tsee the frige and check what vegetables are geeting wastesd and from that ingrediants we can make something</p>
-                        <a href="https://github.com/ayan-gorain/Cook-Fast"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/ayan-gorain/Cookify"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="">
-                    <div class="layer">
-                        <h3>Portfolio Website</h3>
-                        <p>This website is portfolio you can know me better in in this website</p>
-                        <a href="https://github.com/ayan-gorain/my_portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
+                
                 </div>
             </div>
             <a href="#" class="btn">See More</a>
